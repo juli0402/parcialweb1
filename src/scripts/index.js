@@ -24,7 +24,7 @@ data.items.forEach((element) => {
                     </p>
                     <p>${element.title}</p>
                 </div>
-                <div class="col-3">
+                <div class="col-3" style = "margin-bottom: auto; margin-top: auto;">
                     <p>${element.location}</p>
                 </div>
         `;
