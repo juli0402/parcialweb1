@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -49,11 +49,12 @@
               type="search"
               placeholder="Filtrar por categoría"
               aria-label="Search"
+              disabled="disabled"
             />
             <button type="button" class="searchIcon">
               <img src="src/img/loupe.png" alt="search" />
             </button>
-            <a href="favorites.html">
+            <a href="favorites.html" id="heart">
               <img
                 class="favoriteIcon mx-3"
                 src="src/img/heart.png"
@@ -66,7 +67,67 @@
     </nav>
 
     <div class="container">
-      <div class="row mt-3">
+      <div
+        class="row"
+        style="margin-bottom: auto; margin-top: 20px; margin-left: 27px"
+      >
+        <div class="breadcrumb">
+          <p><b>Favoritos</b></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row product" id="eliminar">
+        <div
+          class="col-1 form-check checkbox-lg"
+          style="
+            align-items: center;
+            margin-bottom: auto;
+            margin-top: auto;
+            width: 50px;
+          "
+        >
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault"
+            style="margin-bottom: auto; margin-top: auto; margin-left: auto"
+          />
+        </div>
+        <div class="col-3" style="margin-top: auto; margin-bottom: auto">
+          <p>
+            <a
+              href="productDetail.html?id=asdasdas"
+              style="
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                text-decoration: none;
+              "
+            >
+              <button
+                style="
+                  background: #e1677d;
+                  border-radius: 20px;
+                  color: white;
+                  display: block;
+                  margin: 5px;
+                  width: 200%;
+                  height: 51px;
+                  left: 200px;
+                  top: 178px;
+                "
+                class="btn"
+              >
+                Eliminar
+              </button>
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="row" id="row">
         <!-- div repetido para cada producto del json -->
         <div class="products" id="divFavoritos"></div>
         <script src="src/data/data.js"></script>

@@ -51,11 +51,12 @@
               type="search"
               placeholder="Filtrar por categoría"
               aria-label="Search"
+              disabled="disabled"
             />
             <button type="button" class="searchIcon">
               <img src="src/img/loupe.png" alt="search" />
             </button>
-            <a href="favorites.html">
+            <a href="favorites.html" id = "heart">
               <img
                 class="favoriteIcon mx-3"
                 src="src/img/heart.png"
@@ -84,7 +85,7 @@
         role="dialog"
         aria-hidden="true"
       >
-        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-dialog modal-dialog-centered" role="document" style = "margin-bottom: auto; margin-top: auto;">
           <div class="modal-content">
             <div class="modal-body">
               <p id="modalProductTitle"></p>

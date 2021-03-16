@@ -40,7 +40,7 @@ form a img {
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.15);
   box-sizing: border-box;
-  margin-bottom: 5px;
+  margin: 0%;
 }
 
 .productDetail {
@@ -50,4 +50,14 @@ form a img {
 .modal-body {
   margin: 20px;
   text-align: center;
+}
+#row{
+  margin-top: 0px;
+}
+#eliminar{
+  height: 89px;
+}
+#heart{
+  margin-bottom: auto; 
+  margin-top: auto;
 }
